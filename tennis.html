@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marcador de Tennis</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="title text-center">Marcador de Tennis</header>
+    <nav class="links">Enllaços a altres pàgines</nav>
+    <table class="scoreboard">
+      <thead>
+        <tr>
+          <th>Jugador</th>
+          <th></th>
+          <th>Punts</th>
+          <th>Jocs</th>
+          <th>Sets</th>
+          <th>Accions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jugador 1</td>
+          <td>*</td>
+          <td id="score-a">30</td>
+          <td id="games-a">5</td>
+          <td id="sets-a">1</td>
+          <td><button class="score-button" id="score-button-a">+1</button></td>
+        </tr>
+        <tr>
+          <td>Jugador 2</td>
+          <td></td>
+          <td id="score-b">15</td>
+          <td id="games-b">2</td>
+          <td id="sets-b">0</td>
+          <td><button class="score-button" id="score-button-b">+1</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="gestor">
+        <td><button class="score-button" id="reset">Iniciar partida</button></td>
+    </div>
+    <div class="history">
+      <h2>Historial de la Partida</h2>
+      <p>Punt del jugador1 15-0</p>
+      <p>Punt del jugador2 15-15</p>
+    </div>
+  </div>
+</body>
+</html>
+
