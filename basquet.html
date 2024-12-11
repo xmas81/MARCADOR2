@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marcador de Bàsquet</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="funcions.js"></script>
 </head>
 <body>
 <div class="container">
@@ -16,28 +17,33 @@
   <table class="scoreboard">
     <tbody>
     <tr>
-      <td>Equipo A</td>
-      <td>Equipo B</td>
+      <th></th>
+      <th>Equipo A</th>
+      <th>Equipo B</th>
     </tr>
     <tr>
-      <td id="points-a">60</td>
-      <td id="points-b">45</td>
+      <td>Punts</td>
+      <td id="points-a">0</td>
+      <td id="points-b">0</td>
     </tr>
     <tr>
-      <td id="fouls-a">3</td>
-      <td id="fouls-b">2</td>
+      <td>Faltes</td>
+      <td id="fouls-a">0</td>
+      <td id="fouls-b">0</td>
     </tr>
     <tr>
+      <td></td>
       <td>
-        <button class="score-button">+1</button>
-        <button class="score-button">+2</button>
-        <button class="score-button">+3</button>
+
+        <button class="score-button" onclick="marcador('A',1)">+1</button>
+        <button class="score-button" onclick="marcador('A',2)">+2</button>
+        <button class="score-button" onclick="marcador('A',3)">+3</button>
         <button class="score-button">Falta</button>
       </td>
       <td>
-        <button class="score-button">+1</button>
-        <button class="score-button">+2</button>
-        <button class="score-button">+3</button>
+        <button class="score-button" onclick="marcador('B',1)">+1</button>
+        <button class="score-button" onclick="marcador('B',2)">+2</button>
+        <button class="score-button" onclick="marcador('B',3)">+3</button>
         <button class="score-button">Falta</button>
       </td>
     </tr>
@@ -47,7 +53,7 @@
     <td><button class="score-button" id="reset">Iniciar partida</button></td>
     <td><button class="score-button" id="canviPeriode">Canvi de període</button></td>
   </div>
-  <div class="history">
+  <div class="history" id="historic">
     <h2>Historial de la Partida</h2>
     <p>3-0</p>
     <p>3-2</p>
