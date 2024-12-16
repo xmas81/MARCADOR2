@@ -32,7 +32,7 @@ body {
 }
 
 .scoreboard th, .scoreboard td {
-  border: 1px solid #ccc;
+  border: 1px solid #c27878;
   padding: 10px;
   text-align: center;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 .scoreboard tr:nth-child(odd) {
-  background-color: #e5f2e9; /* Fondo alternatiu en files alternes*/
+  background-color: #875e77; /* Fondo alternatiu en files alternes*/
 }
 
 .icon-ball {
@@ -94,7 +94,7 @@ body {
 }
 
 .scoreboard tr:nth-child(odd) {
-  background-color: #e5f2e9; /* Fondo alternado en verde pastel */
+  background-color: #f2e5ee; /* Fondo alternado en verde pastel */
 }
 
 /* Estilos para los botones de suma */
@@ -109,7 +109,7 @@ body {
 }
 
 .score-button:hover {
-  background-color: #0056b3;
+  background-color: #00b339;
 }
 
 .period-container {
